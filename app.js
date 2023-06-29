@@ -32,13 +32,13 @@ var data = {
 
 var jsonData = JSON.stringify(data);
 var dc="us21"
- var apikey="9175291e58f691c13aaed1021d734cbb"
+ var apikey="04f925ca14a7407cbd77a73ee2968000"
 
 const url =  "https://us21.api.mailchimp.com/3.0/lists/08bf4499d5";
 
 const options = {
     method : "POST",
-    auth : "amisha:9175291e58f691c13aaed1021d734cbb-us21"
+    auth : "amisha:04f925ca14a7407cbd77a73ee2968000-us21"
 }
 
 
@@ -109,7 +109,7 @@ app.post("/failure",function(req,res){
 
 
 
-app.listen(process.env.PORT,function(req,res) {
+app.listen(process.env.PORT || 3000,function(req,res) {
     console.log('listening on 3000');
 })
 
@@ -121,7 +121,7 @@ app.listen(process.env.PORT,function(req,res) {
 
 
 // API KEY 
-// 9175291e58f691c13aaed1021d734cbb-us21
+// 04f925ca14a7407cbd77a73ee2968000-us21
 
 // audience id
 // 08bf4499d5
